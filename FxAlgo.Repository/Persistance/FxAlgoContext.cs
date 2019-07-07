@@ -9,6 +9,11 @@ namespace FxAlgo.Repository.Persistance
             this.Configuration.LazyLoadingEnabled = false;
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            var instance = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+        }
+
         public virtual DbSet<AskPrice> AskPrices { get; set; }
         public virtual DbSet<BidPrice> BidPrices { get; set; }
 

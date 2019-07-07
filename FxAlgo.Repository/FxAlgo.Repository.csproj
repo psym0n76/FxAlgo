@@ -58,6 +58,10 @@
     <Compile Include="Migrations\201907052215335_IntialLoad.Designer.cs">
       <DependentUpon>201907052215335_IntialLoad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907062056447_SeedingData.cs" />
+    <Compile Include="Migrations\201907062056447_SeedingData.Designer.cs">
+      <DependentUpon>201907062056447_SeedingData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistance\FxAlgoContext.cs" />
     <Compile Include="Persistance\Repositories\AskPriceRepository.cs" />
@@ -73,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201907052215335_IntialLoad.resx">
       <DependentUpon>201907052215335_IntialLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907062056447_SeedingData.resx">
+      <DependentUpon>201907062056447_SeedingData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
