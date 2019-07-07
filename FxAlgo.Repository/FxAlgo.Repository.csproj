@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Domain\Price.cs" />
     <Compile Include="Core\Respositories\IBidPriceRepository.cs" />
     <Compile Include="Core\Respositories\IAskPriceRepository.cs" />
     <Compile Include="Core\Respositories\IRepository.cs" />
